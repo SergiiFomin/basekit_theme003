@@ -51,13 +51,15 @@
         }
     },
     "fontSwatch": {
-       "title": "Arial",
+       "title": "Main",
         "font1": {
+            "font-family": "Yesteryear",
             "font-size": "47px",
             "line-height": "50px",
             "color": "@color-swatch1"
         },
         "font2": {
+            "font-family": "Open Sans",
             "font-size": "30px",
             "font-weight": "800",
             "line-height": "35px",
@@ -71,6 +73,7 @@
             "color": "@color-swatch1"
         },
         "font4": {
+            "font-family": "Open Sans",
             "font-size": "13px",
             "font-weight": "800",
             "line-height": "22px",
@@ -84,12 +87,14 @@
             "color": "inherit"
         },
         "font6": {
-            "font-size": "12px",
-            "font-weight": "800",
-            "line-height": "18px",
-            "color": "@color-swatch4"
+            "font-family": "Open Sans",     // @font-swatch6-font-family
+            "font-size": "12px",            // @font-swatch6-font-size
+            "font-weight": "800",           // @font-swatch6-font-weight
+            "line-height": "18px",          // @font-swatch6-line-height
+            "color": "@color-swatch4"      // @font-swatch6-color
         },
         "font7": {
+            "font-family": "Open Sans",
             "font-size": "12px",
             "font-weight": "inherit",
             "line-height": "18px",

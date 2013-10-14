@@ -31,7 +31,7 @@
                 <div class="row">
                     <article class="span4">
 
-                        {{widget('space', 'space', {'height': '50'})|raw}}
+                        {{widget('space', 'space', {'height': '30'})|raw}}
 
                         <h2>{{widget('content', 'title', {content: 'our advantages', lines: 'all'})|raw}}</h2>
 
@@ -40,26 +40,26 @@
                                 <strong>{{widget('content', 'title', {content: '1.', lines: 'all'})|raw}}</strong>
                                 <div class="wrapper">
                                     <h5>{{widget('content', 'title', {content: 'Vestibulum ante ipsum primis in', lines: 'all'})|raw}}</h5>
-                                    {{widget('content', 'title', {content: 'Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.', lines: 'all'})|raw}}
+                                    {{widget('content', 'adv_text1', {content: 'Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.', lines: 'all'})|raw}}
                                 </div>
                             </li>
                             <li>
                                 <strong>{{widget('content', 'title', {content: '2.', lines: 'all'})|raw}}</strong>
                                 <div class="wrapper">
                                     <h5>{{widget('content', 'title', {content: 'dolorem eum fugiat quo voluptas', lines: 'all'})|raw}}</h5>
-                                    {{widget('content', 'title', {content: 'Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.', lines: 'all'})|raw}}
+                                    {{widget('content', 'adv_text2', {content: 'Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.', lines: 'all'})|raw}}
                                 </div>
                             </li>
                             <li>
                                 <strong>{{widget('content', 'title', {content: '3.', lines: 'all'})|raw}}</strong>
                                 <div class="wrapper">
                                     <h5>{{widget('content', 'title', {content: 'Vestibulum ante ipsum primis in', lines: 'all'})|raw}}</h5>
-                                    {{widget('content', 'title', {content: 'Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.', lines: 'all'})|raw}}
+                                    {{widget('content', 'adv_text3', {content: 'Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.', lines: 'all'})|raw}}
                                 </div>
                             </li>
                         </ul>
                         
-                        {{widget('space', 'space', {'height': '50'})|raw}}
+                        {{widget('space', 'space', {'height': '30'})|raw}}
 
                         <h2>{{widget('content', 'title', {content: 'Testimonials', lines: 'all'})|raw}}</h2>
 
@@ -68,13 +68,11 @@
 
                         {{widget('content', 'blockquote', {content: 'Cum sociis natoque penatibus et magnis dis partu rient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio morbi nunc odio. Nulla venena tis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus.', lines: 'all'})|raw}}
                         <h5>{{widget('content', 'small', {content: 'John smith', lines: 'all'})|raw}}</h5>
-                        
-                        {{widget('space', 'space', {'height': '50'})|raw}}
 
                     </article>
                     <article class="span8">
 
-                        {{widget('space', 'space', {'height': '50'})|raw}}
+                        {{widget('space', 'space', {'height': '30'})|raw}}
 
                         <h2>{{widget('content', 'title', {content: 'a few words about us', lines: 'all'})|raw}}</h2>
 
@@ -82,11 +80,11 @@
 
                         {{widget('content', 'title', {content: 'Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat.', lines: 'all'})|raw}}
 
-                        {{widget('space', 'space', {'height': '50'})|raw}}
+                        {{widget('space', 'space', {'height': '30'})|raw}}
 
                         <h2>{{widget('content', 'title', {content: 'a few words about us', lines: 'all'})|raw}}</h2>
 
-                        <div class="row">
+                        <div class="row about">
 
                             <article class="span2">
 
@@ -94,7 +92,11 @@
 
                                 <h5>{{widget('content', 'title', {content: 'Mark Johnson', lines: 'all'})|raw}}</h5>
 
-                                {{widget('content', 'title', {content: 'Cum sociis natoque penatib et magnis dis parturient montes ascetur', lines: 'all'})|raw}}
+                                {{widget('content', 'about_text', {content: 'Cum sociis natoque penatib et magnis dis parturient montes ascetur', lines: 'all'})|raw}}
+
+                                <div class="clear"></div>
+
+                                {{widget('space', 'space', {'height': '30'})|raw}}
 
                             </article>
 
@@ -104,7 +106,11 @@
 
                                 <h5>{{widget('content', 'title', {content: 'Mark Johnson', lines: 'all'})|raw}}</h5>
 
-                                {{widget('content', 'title', {content: 'Cum sociis natoque penatib et magnis dis parturient montes ascetur', lines: 'all'})|raw}}
+                                {{widget('content', 'about_text', {content: 'Cum sociis natoque penatib et magnis dis parturient montes ascetur', lines: 'all'})|raw}}
+
+                                <div class="clear"></div>
+
+                                {{widget('space', 'space', {'height': '30'})|raw}}
 
                             </article>
 
@@ -114,7 +120,11 @@
 
                                 <h5>{{widget('content', 'title', {content: 'Mark Johnson', lines: 'all'})|raw}}</h5>
 
-                                {{widget('content', 'title', {content: 'Cum sociis natoque penatib et magnis dis parturient montes ascetur', lines: 'all'})|raw}}
+                                {{widget('content', 'about_text', {content: 'Cum sociis natoque penatib et magnis dis parturient montes ascetur', lines: 'all'})|raw}}
+
+                                <div class="clear"></div>
+
+                                {{widget('space', 'space', {'height': '30'})|raw}}
 
                             </article>
 
@@ -124,7 +134,11 @@
 
                                 <h5>{{widget('content', 'title', {content: 'Mark Johnson', lines: 'all'})|raw}}</h5>
 
-                                {{widget('content', 'title', {content: 'Cum sociis natoque penatib et magnis dis parturient montes ascetur', lines: 'all'})|raw}}
+                                {{widget('content', 'about_text', {content: 'Cum sociis natoque penatib et magnis dis parturient montes ascetur', lines: 'all'})|raw}}
+
+                                <div class="clear"></div>
+
+                                {{widget('space', 'space', {'height': '30'})|raw}}
 
                             </article>
 
@@ -134,13 +148,17 @@
 
                                 <h5>{{widget('content', 'title', {content: 'Mark Johnson', lines: 'all'})|raw}}</h5>
 
-                                {{widget('content', 'title', {content: 'Cum sociis natoque penatib et magnis dis parturient montes ascetur', lines: 'all'})|raw}}
+                                {{widget('content', 'about_text', {content: 'Cum sociis natoque penatib et magnis dis parturient montes ascetur', lines: 'all'})|raw}}
+
+                                <div class="clear"></div>
+
+                                {{widget('space', 'space', {'height': '30'})|raw}}
 
                             </article>
 
                         </div>
 
-                        
+                        {{widget('space', 'space', {'height': '30'})|raw}}                        
                         
                         {{zone('main')|raw}}
 
