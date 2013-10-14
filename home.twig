@@ -1,0 +1,145 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+
+    <!--header-->
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class=row>
+                    <article class="span3">
+                        <h1 class="brand">{{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}</h1>
+                    </article>
+                    <article class="span9">
+                        <div class="nav-collapse nav-collapse_ collapse">
+                            {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="global">
+
+        <section class="slider">
+            {{widget('responsiveslideshow', 'responsiveslideshow', {'duration':'3', 'transSpeed': '1000', 'transType': 'fade', 'showButtons': true, 'showBullets': false, 'allowPause': false, 'allowLoop': true, 'images':[{'imageHeight':'481', 'imageWidth':'1600', 'url':'http://placehold.it/1600x481', 'title':'test title', 'description': 'test desc'},{'imageHeight':'481', 'imageWidth':'1600', 'url':'http://placehold.it/1600x481', 'title':'test title', 'description': 'test desc'},{'imageHeight':'481', 'imageWidth':'1600', 'url':'http://placehold.it/1600x481', 'title':'test title', 'description': 'test desc'},{'imageHeight':'481', 'imageWidth':'1600', 'url':'http://placehold.it/1600x481', 'title':'test title', 'description': 'test desc'}]})|raw}}
+        </section>
+
+        <section class="showcase">
+            <div class="inner">
+                <div class="container">
+                    <div class="row">
+                        <article class="span12">
+                            <ul class="carousel">
+                                <li><figure>{{widget('image', 'slide1', { 'src': asset('/images/slide-1.jpg'), 'alt': 'slide-1', 'fileName': 'slide-1.jpg', 'fileSize': '58kb', 'imageSize': '170 x 103', 'imageWidth': '170px'})|raw}}</figure></li>
+                                <li><figure>{{widget('image', 'slide2', { 'src': asset('/images/slide-2.jpg'), 'alt': 'slide-2', 'fileName': 'slide-2.jpg', 'fileSize': '58kb', 'imageSize': '170 x 103', 'imageWidth': '170px'})|raw}}</figure></li>
+                                <li><figure>{{widget('image', 'slide3', { 'src': asset('/images/slide-3.jpg'), 'alt': 'slide-3', 'fileName': 'slide-3.jpg', 'fileSize': '58kb', 'imageSize': '170 x 103', 'imageWidth': '170px'})|raw}}</figure></li>
+                                <li><figure>{{widget('image', 'slide4', { 'src': asset('/images/slide-4.jpg'), 'alt': 'slide-4', 'fileName': 'slide-4.jpg', 'fileSize': '58kb', 'imageSize': '170 x 103', 'imageWidth': '170px'})|raw}}</figure></li>
+                                <li><figure>{{widget('image', 'slide5', { 'src': asset('/images/slide-5.jpg'), 'alt': 'slide-5', 'fileName': 'slide-5.jpg', 'fileSize': '58kb', 'imageSize': '170 x 103', 'imageWidth': '170px'})|raw}}</figure></li>
+                                <li><figure>{{widget('image', 'slide6', { 'src': asset('/images/slide-6.jpg'), 'alt': 'slide-6', 'fileName': 'slide-6.jpg', 'fileSize': '58kb', 'imageSize': '170 x 103', 'imageWidth': '170px'})|raw}}</figure></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--content-->
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <article class="span3">
+                        {{widget('space', 'space', {'height': '50'})|raw}}
+                        {{widget('content', 'phone', {content: '1 800 123 1234', lines: 'all'})|raw}}
+                        {{widget('companyaddress', 'companyaddress', {})|raw}}
+                        <div class="mail">
+                            {{widget('content', 'mail', {content: 'E -mail:', lines: 'all'})|raw}}
+                            <a href="mailto:mail@demolink.org">{{widget('content', 'maillink', {content: 'mail@demolink.org', lines: 'all'})|raw}}</a>
+                        </div>
+                        {{widget('space', 'space', {'height': '50'})|raw}}
+                    </article>
+                    <article class="span6">
+                        {{widget('space', 'space', {'height': '50'})|raw}}
+                        <h2>{{widget('content', 'title', {content: 'Every day is party day in Irish Pub', lines: 'all'})|raw}}</h2>
+                        <figure class="fleft">{{widget('image', 'image', { 'src': asset('/images/page1_img1.jpg'), 'title': 'John Silver', 'alt': '(chef)', 'fileName': 'page1_img1.jpg', 'fileSize': '58kb', 'imageSize': '262 x 256', 'imageWidth': '262px'})|raw}}</figure>
+                        <div class="wrapper">
+                            <ul class="list1">
+                                <li>{{widget('content', 'write1', {content: 'Mon - Fri 7am - 11am (Breakfast)', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'write2', {content: 'Mon - Fri 11am - 8pm (Lunch)', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'write3', {content: 'Sat 8am - 12pm (Breakfast)', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'write4', {content: 'Sat 12pm - 4pm (Lunch)', lines: 'all'})|raw}}</li>
+                            </ul>
+                            {{widget('content', 'text', {content: 'Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus a lorem. ', lines: 'all'})|raw}}
+                            {{widget('content', 'blockquote', {content: 'Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio morbi nunc odio.', lines: 'all'})|raw}}
+                            {{widget('button', 'more', {italic: false, text:'read more', 'align':'widget-align-left'})|raw}}
+                        </div>
+                        {{zone('main')|raw}}
+                        {{widget('space', 'space', {'height': '50'})|raw}}
+                    </article>
+                    <article class="span3">
+                        {{widget('space', 'space', {'height': '50'})|raw}}
+                        <ul class="banners">
+                            <li><a href="#"><figure>{{widget('image', 'banner1', { 'src': asset('/images/banner1.gif'), 'alt': 'banner1', 'fileName': 'banner1.gif', 'fileSize': '58kb', 'imageSize': '268 x 125', 'imageWidth': '268px'})|raw}}</figure></a></li>
+                            <li><a href="#"><figure>{{widget('image', 'banner2', { 'src': asset('/images/banner2.gif'), 'alt': 'banner2', 'fileName': 'banner2.gif', 'fileSize': '58kb', 'imageSize': '268 x 125', 'imageWidth': '268px'})|raw}}</figure></a></li>
+                            <li><a href="#"><figure>{{widget('image', 'banner3', { 'src': asset('/images/banner3.gif'), 'alt': 'banner3', 'fileName': 'banner3.gif', 'fileSize': '58kb', 'imageSize': '268 x 125', 'imageWidth': '268px'})|raw}}</figure></a></li>
+                        </ul>
+                        {{widget('space', 'space', {'height': '50'})|raw}}
+                    </article>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <section class="span12">
+                    <div class="row">
+                        <article class="span3 copyright">
+                            <span class="sitename">{{widget('content', 'sitename', {content: 'Beerhouse', lines: 'all'})|raw}}</span>
+                            <div class="wrapper">
+                                <span class="date">{{widget('content', 'sitename', {content: '&copy; 2013<br />', lines: 'all'})|raw}}</span>
+                                <a href="index-5.html">{{widget('content', 'sitename', {content: 'Privacy Policy', lines: 'all'})|raw}}</a>
+                            </div>
+                        </article>
+                        <article class="span2">
+                            <ul class="list">
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'Sed dignissim', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'metus est rhonc', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'us est luctus', lines: 'all'})|raw}}</a></li>
+                            </ul>
+                        </article>
+                        <article class="span2">
+                            <ul class="list">
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'Proin sed massa ', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'Aenean malesu', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'ada lobor', lines: 'all'})|raw}}</a></li>
+                            </ul>
+                        </article>
+                        <article class="span3">
+                            <ul class="list">
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'Sed ultricies', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'semper ligula id molestie', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'Suspendisse eget', lines: 'all'})|raw}}</a></li>
+                            </ul>
+                        </article>
+                        <article class="span2">
+                            {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': 'profile'})|raw}}
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+    
+</div>
+
+{% endblock %}

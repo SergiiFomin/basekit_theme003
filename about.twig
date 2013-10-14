@@ -1,0 +1,201 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+
+    <!--header-->
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class=row>
+                    <article class="span3">
+                        <h1 class="brand">{{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}</h1>
+                    </article>
+                    <article class="span9">
+                        <div class="nav-collapse nav-collapse_ collapse">
+                            {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="global">
+
+        <!--content-->
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <article class="span4">
+
+                        {{widget('space', 'space', {'height': '50'})|raw}}
+
+                        <h2>{{widget('content', 'title', {content: 'our advantages', lines: 'all'})|raw}}</h2>
+
+                        <ul class="drop">
+                            <li>
+                                <strong>{{widget('content', 'title', {content: '1.', lines: 'all'})|raw}}</strong>
+                                <div class="wrapper">
+                                    <h5>{{widget('content', 'title', {content: 'Vestibulum ante ipsum primis in', lines: 'all'})|raw}}</h5>
+                                    {{widget('content', 'title', {content: 'Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.', lines: 'all'})|raw}}
+                                </div>
+                            </li>
+                            <li>
+                                <strong>{{widget('content', 'title', {content: '2.', lines: 'all'})|raw}}</strong>
+                                <div class="wrapper">
+                                    <h5>{{widget('content', 'title', {content: 'dolorem eum fugiat quo voluptas', lines: 'all'})|raw}}</h5>
+                                    {{widget('content', 'title', {content: 'Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.', lines: 'all'})|raw}}
+                                </div>
+                            </li>
+                            <li>
+                                <strong>{{widget('content', 'title', {content: '3.', lines: 'all'})|raw}}</strong>
+                                <div class="wrapper">
+                                    <h5>{{widget('content', 'title', {content: 'Vestibulum ante ipsum primis in', lines: 'all'})|raw}}</h5>
+                                    {{widget('content', 'title', {content: 'Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.', lines: 'all'})|raw}}
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        {{widget('space', 'space', {'height': '50'})|raw}}
+
+                        <h2>{{widget('content', 'title', {content: 'Testimonials', lines: 'all'})|raw}}</h2>
+
+                        {{widget('content', 'blockquote', {content: 'Cum sociis natoque penatibus et magnis dis partu rient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio morbi nunc odio. Nulla venena tis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus.', lines: 'all'})|raw}}
+                        <h5>{{widget('content', 'small', {content: 'Mike Tompson', lines: 'all'})|raw}}</h5>
+
+                        {{widget('content', 'blockquote', {content: 'Cum sociis natoque penatibus et magnis dis partu rient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio morbi nunc odio. Nulla venena tis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus.', lines: 'all'})|raw}}
+                        <h5>{{widget('content', 'small', {content: 'John smith', lines: 'all'})|raw}}</h5>
+                        
+                        {{widget('space', 'space', {'height': '50'})|raw}}
+
+                    </article>
+                    <article class="span8">
+
+                        {{widget('space', 'space', {'height': '50'})|raw}}
+
+                        <h2>{{widget('content', 'title', {content: 'a few words about us', lines: 'all'})|raw}}</h2>
+
+                        <h5>{{widget('content', 'title', {content: 'Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl.', lines: 'all'})|raw}}</h5>
+
+                        {{widget('content', 'title', {content: 'Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat.', lines: 'all'})|raw}}
+
+                        {{widget('space', 'space', {'height': '50'})|raw}}
+
+                        <h2>{{widget('content', 'title', {content: 'a few words about us', lines: 'all'})|raw}}</h2>
+
+                        <div class="row">
+
+                            <article class="span2">
+
+                                <figure>{{widget('image', 'image1', { 'src': asset('/images/page2_img1.jpg'), 'fileName': 'page2_img1.jpg', 'fileSize': '58kb', 'imageSize': '228 x 217', 'imageWidth': '170px'})|raw}}</figure>
+
+                                <h5>{{widget('content', 'title', {content: 'Mark Johnson', lines: 'all'})|raw}}</h5>
+
+                                {{widget('content', 'title', {content: 'Cum sociis natoque penatib et magnis dis parturient montes ascetur', lines: 'all'})|raw}}
+
+                            </article>
+
+                            <article class="span2">
+
+                                <figure>{{widget('image', 'image2', { 'src': asset('/images/page2_img2.jpg'), 'fileName': 'page2_img2.jpg', 'fileSize': '58kb', 'imageSize': '228 x 217', 'imageWidth': '170px'})|raw}}</figure>
+
+                                <h5>{{widget('content', 'title', {content: 'Mark Johnson', lines: 'all'})|raw}}</h5>
+
+                                {{widget('content', 'title', {content: 'Cum sociis natoque penatib et magnis dis parturient montes ascetur', lines: 'all'})|raw}}
+
+                            </article>
+
+                            <article class="span2">
+
+                                <figure>{{widget('image', 'image3', { 'src': asset('/images/page2_img3.jpg'), 'fileName': 'page2_img3.jpg', 'fileSize': '58kb', 'imageSize': '228 x 217', 'imageWidth': '170px'})|raw}}</figure>
+
+                                <h5>{{widget('content', 'title', {content: 'Mark Johnson', lines: 'all'})|raw}}</h5>
+
+                                {{widget('content', 'title', {content: 'Cum sociis natoque penatib et magnis dis parturient montes ascetur', lines: 'all'})|raw}}
+
+                            </article>
+
+                            <article class="span2">
+
+                                <figure>{{widget('image', 'image4', { 'src': asset('/images/page2_img4.jpg'), 'fileName': 'page2_img4.jpg', 'fileSize': '58kb', 'imageSize': '228 x 217', 'imageWidth': '170px'})|raw}}</figure>
+
+                                <h5>{{widget('content', 'title', {content: 'Mark Johnson', lines: 'all'})|raw}}</h5>
+
+                                {{widget('content', 'title', {content: 'Cum sociis natoque penatib et magnis dis parturient montes ascetur', lines: 'all'})|raw}}
+
+                            </article>
+
+                            <article class="span2">
+
+                                <figure>{{widget('image', 'image5', { 'src': asset('/images/page2_img5.jpg'), 'fileName': 'page2_img5.jpg', 'fileSize': '58kb', 'imageSize': '228 x 217', 'imageWidth': '170px'})|raw}}</figure>
+
+                                <h5>{{widget('content', 'title', {content: 'Mark Johnson', lines: 'all'})|raw}}</h5>
+
+                                {{widget('content', 'title', {content: 'Cum sociis natoque penatib et magnis dis parturient montes ascetur', lines: 'all'})|raw}}
+
+                            </article>
+
+                        </div>
+
+                        
+                        
+                        {{zone('main')|raw}}
+
+                    </article>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <section class="span12">
+                    <div class="row">
+                        <article class="span3 copyright">
+                            <span class="sitename">{{widget('content', 'sitename', {content: 'Beerhouse', lines: 'all'})|raw}}</span>
+                            <div class="wrapper">
+                                <span class="date">{{widget('content', 'sitename', {content: '&copy; 2013<br />', lines: 'all'})|raw}}</span>
+                                <a href="index-5.html">{{widget('content', 'sitename', {content: 'Privacy Policy', lines: 'all'})|raw}}</a>
+                            </div>
+                        </article>
+                        <article class="span2">
+                            <ul class="list">
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'Sed dignissim', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'metus est rhonc', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'us est luctus', lines: 'all'})|raw}}</a></li>
+                            </ul>
+                        </article>
+                        <article class="span2">
+                            <ul class="list">
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'Proin sed massa ', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'Aenean malesu', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'ada lobor', lines: 'all'})|raw}}</a></li>
+                            </ul>
+                        </article>
+                        <article class="span3">
+                            <ul class="list">
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'Sed ultricies', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'semper ligula id molestie', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'Suspendisse eget', lines: 'all'})|raw}}</a></li>
+                            </ul>
+                        </article>
+                        <article class="span2">
+                            {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': 'profile'})|raw}}
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+    
+</div>
+
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+
+    <!--header-->
+    <header>
+        <div class="container">
+            <div class=row>
+                <article class="span12">
+                    <h1 class="brand">{{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}</h1>
+                    <div class="nav-collapse nav-collapse_ collapse">
+                        {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+                    </div>
+                </article>
+            </div>
+        </div>
+    </header>
+
+    <div class="global">
+
+        <!--content-->
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+                        {{zone('main')|raw}}
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <section class="span12">
+                    <div class="row">
+                        <article class="span3 copyright">
+                            <span class="sitename">{{widget('content', 'sitename', {content: 'Beerhouse', lines: 'all'})|raw}}</span>
+                            <div class="wrapper">
+                                <span class="date">{{widget('content', 'sitename', {content: '&copy; 2013<br />', lines: 'all'})|raw}}</span>
+                                <a href="index-5.html">{{widget('content', 'sitename', {content: 'Privacy Policy', lines: 'all'})|raw}}</a>
+                            </div>
+                        </article>
+                        <article class="span2">
+                            <ul class="list">
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'Sed dignissim', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'metus est rhonc', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'us est luctus', lines: 'all'})|raw}}</a></li>
+                            </ul>
+                        </article>
+                        <article class="span2">
+                            <ul class="list">
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'Proin sed massa ', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'Aenean malesu', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'ada lobor', lines: 'all'})|raw}}</a></li>
+                            </ul>
+                        </article>
+                        <article class="span3">
+                            <ul class="list">
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'Sed ultricies', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'semper ligula id molestie', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'sitename', {content: 'Suspendisse eget', lines: 'all'})|raw}}</a></li>
+                            </ul>
+                        </article>
+                        <article class="span2">
+                            {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': 'profile'})|raw}}
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+    
+</div>
+
+{% endblock %}
