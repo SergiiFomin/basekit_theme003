@@ -58,11 +58,13 @@
                         {{widget('companyaddress', 'companyaddress', {})|raw}}
                         <div class="mail">
                             {{widget('content', 'mail', {content: 'E -mail:', lines: 'all'})|raw}}
-                            <a href="mailto:mail@demolink.org">{{widget('content', 'maillink', {content: 'mail@demolink.org', lines: 'all'})|raw}}</a>
+                            {{widget('content', 'maillink', {content: '<a href="mailto:mail@demolink.org">mail@demolink.org</a>', lines: 'all'})|raw}}
                         </div>
                         {{widget('space', 'space', {'height': '30'})|raw}}
                     </article>
                     <article class="span6">
+                        {{widget('space', 'space', {'height': '30'})|raw}}
+                        {{zone('main')|raw}}
                         {{widget('space', 'space', {'height': '30'})|raw}}
                         <h2>{{widget('content', 'title', {content: 'Every day is party day in Irish Pub', lines: 'all'})|raw}}</h2>
                         <figure class="fleft">{{widget('image', 'image', { 'src': asset('/images/page1_img1.jpg'), 'title': 'John Silver', 'alt': '(chef)', 'fileName': 'page1_img1.jpg', 'fileSize': '58kb', 'imageSize': '262 x 256', 'imageWidth': '262px'})|raw}}</figure>
@@ -77,7 +79,6 @@
                             {{widget('content', 'blockquote', {content: 'Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio morbi nunc odio.', lines: 'all'})|raw}}
                             {{widget('button', 'more', {italic: false, text:'read more', 'align':'widget-align-left'})|raw}}
                         </div>
-                        {{zone('main')|raw}}
                         {{widget('space', 'space', {'height': '30'})|raw}}
                     </article>
                     <article class="span3">
@@ -103,32 +104,29 @@
             <div class="row">
                 <section class="span12">
                     <div class="row">
-                        <article class="span3 copyright">
-                            <span class="sitename">{{widget('content', 'sitename', {content: 'Beerhouse', lines: 'all'})|raw}}</span>
-                            <div class="wrapper">
-                                <span class="date">{{widget('content', 'sitename', {content: '&copy; 2013<br />', lines: 'all'})|raw}}</span>
-                                <a href="index-5.html">{{widget('content', 'sitename', {content: 'Privacy Policy', lines: 'all'})|raw}}</a>
-                            </div>
+                        <article class="span3">
+                            {{widget('companyname', 'companyname', {"business": "Beerhouse"})|raw}}
+                            {{widget('profile', 'copyright', { 'profileType':'copyright' })|raw}}
                         </article>
                         <article class="span2">
                             <ul class="list">
-                                <li><a href="#">{{widget('content', 'sitename', {content: 'Sed dignissim', lines: 'all'})|raw}}</a></li>
-                                <li><a href="#">{{widget('content', 'sitename', {content: 'metus est rhonc', lines: 'all'})|raw}}</a></li>
-                                <li><a href="#">{{widget('content', 'sitename', {content: 'us est luctus', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'list-name1', {content: 'Sed dignissim', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'list-name2', {content: 'metus est rhonc', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'list-name3', {content: 'us est luctus', lines: 'all'})|raw}}</a></li>
                             </ul>
                         </article>
                         <article class="span2">
                             <ul class="list">
-                                <li><a href="#">{{widget('content', 'sitename', {content: 'Proin sed massa ', lines: 'all'})|raw}}</a></li>
-                                <li><a href="#">{{widget('content', 'sitename', {content: 'Aenean malesu', lines: 'all'})|raw}}</a></li>
-                                <li><a href="#">{{widget('content', 'sitename', {content: 'ada lobor', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'list-name4', {content: 'Proin sed massa ', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'list-name5', {content: 'Aenean malesu', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'list-name6', {content: 'ada lobor', lines: 'all'})|raw}}</a></li>
                             </ul>
                         </article>
                         <article class="span3">
                             <ul class="list">
-                                <li><a href="#">{{widget('content', 'sitename', {content: 'Sed ultricies', lines: 'all'})|raw}}</a></li>
-                                <li><a href="#">{{widget('content', 'sitename', {content: 'semper ligula id molestie', lines: 'all'})|raw}}</a></li>
-                                <li><a href="#">{{widget('content', 'sitename', {content: 'Suspendisse eget', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'list-name7', {content: 'Sed ultricies', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'list-name8', {content: 'semper ligula id molestie', lines: 'all'})|raw}}</a></li>
+                                <li><a href="#">{{widget('content', 'list-name9', {content: 'Suspendisse eget', lines: 'all'})|raw}}</a></li>
                             </ul>
                         </article>
                         <article class="span2">
