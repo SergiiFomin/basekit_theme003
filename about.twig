@@ -180,11 +180,8 @@
                 <section class="span12">
                     <div class="row">
                         <article class="span3 copyright">
-                            <span class="sitename">{{widget('content', 'sitename', {content: 'Beerhouse', lines: 'all'})|raw}}</span>
-                            <div class="wrapper">
-                                <span class="date">{{widget('content', 'sitename', {content: '&copy; 2013<br />', lines: 'all'})|raw}}</span>
-                                <a href="index-5.html">{{widget('content', 'sitename', {content: 'Privacy Policy', lines: 'all'})|raw}}</a>
-                            </div>
+                            {{widget('companyname', 'companyname', {"business": "Beerhouse"})|raw}}
+                            {{widget('profile', 'copyright', { 'profileType':'copyright' })|raw}}
                         </article>
                         <article class="span2">
                             <ul class="list">
