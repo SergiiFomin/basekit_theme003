@@ -8,7 +8,7 @@
         <div class="container">
             <div class=row>
                 <article class="span12">
-                    <h1 class="brand">{{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}</h1>
+                    {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
                     <div class="nav-collapse nav-collapse_ collapse">
                         {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
                     </div>

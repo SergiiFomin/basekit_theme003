@@ -284,7 +284,7 @@ header{
     .widget.logo{
       font-size: 0;
       line-height: 0;
-      margin: 0 0 50px;
+      margin: 16px 0 30px;
       text-align: center;
       a{
         display: inline-block;
@@ -476,7 +476,8 @@ div[id$="phone"]{
     margin: 0;
   }
 }
-.mail{
+div[id$="address"],
+div[id$="mail"]{
   font: 800 16px/20px @OpenSansFontFamily;
   color: @color-swatch1;
   text-transform: uppercase;
@@ -487,6 +488,9 @@ div[id$="phone"]{
       color: @color-swatch3;
     }
   }
+}
+div[id$="address"]{
+  margin-bottom: 18px;
 }
 .image-title{
   display: block;
@@ -646,8 +650,8 @@ header, footer, #content{
   li{
     float: left;
     list-style: none;
-    width: 23%;
-    margin: 0 1% 20px;
+    width: 24%;
+    margin: 0 1% 20px 0;
     .inner{
       background: none !important;
       a{
@@ -1119,6 +1123,71 @@ a{
 .widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
   &:before{
     content: "\f167";
+  }
+}
+
+.twitter{
+  ul.twitter{
+    margin: 0;
+    li{
+      list-style: none;
+      margin-bottom: 18px;
+      overflow: hidden;
+      .twitter-profile-pic{
+        float: left;
+        margin-right: 20px;
+      }
+      .twitter-content{
+        p{
+          padding-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+.widget.tweet {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  a {
+    padding: 8px 10px 8px 32px;
+    margin: 0;
+    border: 1px solid #057ed0;
+    background-image: image('/images/twitter.png');
+    background-repeat: no-repeat;
+    background-position: 10px;
+    margin: 0em;
+    .border-radius(4px);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+    font-family: @font-swatch2-font-family;
+    font-size:.9em;
+    font-weight:@font-swatch7-font-weight;
+    background-color: #32bbef;
+    color: @color-swatch1;
+    text-decoration: none;
+    text-shadow: 0 1px 0px rgba(0,0,0,0.3);
+    cursor: pointer;
+    &:hover, &:active {
+      border: 1px solid #096eb3;
+      background-color: #2cacdc;
+    }
+  }
+}
+
+.widget.clicktocall a {
+  background-image: image('/images/ic-call.png');
+  background-color: @color-swatch3;
+  background-position: 10px;
+  background-repeat: no-repeat;
+  padding: 10px 10px 10px 38px;
+  margin: 0;
+  color: @color-swatch1;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  &:hover {
+    background-color: @color-swatch2;
+    text-decoration: none;
   }
 }
 

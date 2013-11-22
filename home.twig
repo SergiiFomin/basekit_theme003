@@ -10,7 +10,7 @@
             <div class="container">
                 <div class=row>
                     <article class="span3">
-                        <h1 class="brand">{{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}</h1>
+                        {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
                     </article>
                     <article class="span9">
                         <div class="nav-collapse nav-collapse_ collapse">
@@ -54,15 +54,16 @@
                 <div class="row">
                     <article class="span3">
                         {{widget('space', 'space', {'height': '30'})|raw}}
-                        {{widget('content', 'phone', {content: '1 800 123 1234', lines: 'all'})|raw}}
-                        {{widget('companyaddress', 'companyaddress', {})|raw}}
-                        <div class="mail">
-                            {{widget('content', 'mail', {content: 'E -mail: <br /> <a href="mailto:mail@demolink.org">mail@demolink.org</a>', lines: 'all'})|raw}}
-                        </div>
+                        {{widget('profile', 'phone', { 'profileType':'phone', 'phone':'1 800 123 1234', 'refreshtime':'1800000'})|raw}}
+                        {{widget('profile', 'address', { 'profileType':'address', 'address':'profile', 'refreshtime':'1800000'})|raw}}
+                        {{widget('profile', 'mail', { 'profileType':'email', 'email':'mail@demolink.org', 'refreshtime':'1800000'})|raw}}
                         {{widget('space', 'space', {'height': '30'})|raw}}
                     </article>
                     <article class="span6">
                         {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        {{widget('responsivecolumns', 'responsivecolumns', {})|raw}}
+                        
                         {{zone('main')|raw}}
                         {{widget('space', 'space', {'height': '30'})|raw}}
                         <h2>{{widget('content', 'title', {content: 'Every day is party day in Irish Pub', lines: 'all'})|raw}}</h2>
